@@ -9,8 +9,7 @@
 
     <!-- Definition for spellChecker bean -->
     <context:annotation-config/>
-    <bean id = "student" class="annotation.Required.Student">
-        <property name="name" value="Zara"/>
-        <property name="age" value="11"/>
+    <bean id = "textEditor" class="annotation.Autowired.SetMethod.TextEditor">
     </bean>
+    <bean id="spellChecker" class="annotation.Autowired.SetMethod.SpellChecker"></bean>
 </beans>

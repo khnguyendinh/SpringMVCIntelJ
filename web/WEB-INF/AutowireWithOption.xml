@@ -9,7 +9,7 @@
 
     <!-- Definition for spellChecker bean -->
     <context:annotation-config/>
-    <bean id = "student" class="annotation.Required.Student">
+    <bean id = "student" class="annotation.Autowired.WithOption.Student">
         <property name="name" value="Zara"/>
         <property name="age" value="11"/>
     </bean>
