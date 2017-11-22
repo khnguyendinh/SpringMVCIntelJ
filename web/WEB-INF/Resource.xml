@@ -8,8 +8,7 @@
        http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
     <context:annotation-config/>
-    <bean id = "helloWorld" class = "annotation.JSR250.HelloWorld"
-          init-method = "init" destroy-method = "destroy">
-        <property name = "message" value = "Hello World!"/>
+    <bean id = "textEditor" class="annotation.JSR250.Resource.TextEditor">
     </bean>
+    <bean id="spellChecker" class="annotation.JSR250.Resource.SpellChecker"></bean>
 </beans>
