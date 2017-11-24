@@ -9,7 +9,8 @@ public class CustomerService implements Service {
 
     @Override
     public void execute() {
-
+        System.out.println("Customer name : "+name);
+        System.out.println("Customer website  : "+url);
     }
 
     public void setName(String name) {
