@@ -11,7 +11,6 @@ import java.util.List;
 public class MainApp {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("file:web/WEB-INF/SQLStoredProcedure.xml");
-
         StudentJDBCTemplate studentJDBCTemplate =
                 (StudentJDBCTemplate)context.getBean("studentJDBCTemplate");
 

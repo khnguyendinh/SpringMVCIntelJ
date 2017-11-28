@@ -30,6 +30,7 @@ public class StudentJDBCTemplate implements StudentDAO {
     }
     public Student getStudent(Integer id) {
         SqlParameterSource in = new MapSqlParameterSource().addValue("in_id", id);
+        jdbcCall =  new SimpleJdbcCall(dataSource).withProcedureName("getRecord");
         Map<String, Object> out = jdbcCall.execute(in);
 
         Student student = new Student();
